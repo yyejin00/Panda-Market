@@ -10,15 +10,25 @@
     <title>판다마켓</title>
   </head>
   <body>
-    <main id="login-main">
+    <main id="signup-main">
       <div id="login-wrap-gap">
         <a href="/"><img id="login-logo-img" src="/img/logo.png" /></a>
         <form id="login-form">
-          <div>
+          <div id="email-wrap">
             <label for="email">이메일</label>
             <input
               type="email"
               id="email"
+              placeholder="이메일을 입력해주세요"
+              required
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            />
+          </div>
+          <div id="nickname-wrap">
+            <label for="nickname">닉네임</label>
+            <input
+              type="text"
+              id="nickname"
               placeholder="이메일을 입력해주세요"
               required
               pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
@@ -35,6 +45,18 @@
             />
             <img id="input-visibility" src="/img/visibility_off.svg" />
           </div>
+          <div id="password-wrap">
+            <label for="password">비밀번호 확인</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="비밀번호를 입력해주세요"
+              minlength="8"
+              required
+            />
+            <img id="input-visibility" src="/img/visibility_off.svg" />
+          </div>
+
           <button id="login-button" type="submit">로그인</button>
         </form>
       </div>
@@ -49,8 +71,8 @@
         </div>
       </div>
       <div id="login-bottom">
-        판다마켓이 처음이신가요?
-        <a id="login-bottom-link" href="./signup.html">회원가입</a>
+        이미 회원이신가요?
+        <a id="login-bottom-link" href="./login.html">로그인</a>
       </div>
     </main>
   </body>
