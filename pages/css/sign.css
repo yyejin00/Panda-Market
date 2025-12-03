@@ -18,20 +18,15 @@
   --img-size-42: 42px;
 }
 
-#login-main,
-#signup-main {
+#login-main {
+  padding: 60px 640px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
-#login-main {
-  padding: 231px 640px 284px 640px;
-}
-#signup-main {
-  padding: 60px 640px 284px 640px;
-}
+
 #login-wrap-gap {
   gap: var(--gap-40);
   width: 100%;
@@ -132,11 +127,9 @@
     --img-size-42: 2.188vw;
   }
   #login-main {
-    padding: 12.031vw 33.333vw;
-  }
-  #signup-main {
     padding: 3.125vw 33.333vw;
   }
+
   #login-logo-img {
     width: 20.625vw;
   }
